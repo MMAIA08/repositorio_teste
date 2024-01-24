@@ -6,13 +6,147 @@
    box-shadow: 0;
 }
 
-
-body{
-    background-color: blue;
-
+:root{
+    /*cores*/
+    --cor0:#2251A8;
+    --cor1:#2F4875;
+    --cor2:#004DDB;
+    --cor3:#283142;
+    --cor4:#292c33;
+    /*fontes*/    
 }
 
-h1{
+html{
+    background-color: var(--cor4);
+    font-size: 1em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*cabeçalho*/
+
+header{
+    background-color: var(--cor4);
+    width: 100%;
+    height: 150px;
+    margin: auto;
+    border-bottom: 1px solid var(--cor0);
+}
+
+#nome-visitante{
+    margin-top: 5px ;
+    color: white;
+    font-size: 2em;
+}
+
+.cabecalho-um{
+    background-color:var(--cor1);
+    height: 50px;
+    display: flex;  
+    position: fixed;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;  
+    margin-top: 5px;
+}
+
+.cabecalho-dois{
+    margin-top: 60px;
+    padding: 10px;
+    border-top: 1px solid white;
+    margin-bottom: 25px;
+}
+
+.cabecalho-dois h1{
+    font-size: 1.9em;
+    font-weight: bold;
     text-align: center;
-    color: red;
+    color: var(--cor2);
+    margin-top: 25px;
+}
+
+.cabecalho-dois p{
+    color: white;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px;
+}
+/* cards dos projetos*/
+.secao-cards{
+    background-color: var(--cor3);
+    width: 90%;
+    height: 25em;
+    margin: auto;  
+    display: flex;
+    box-shadow:  2px 2px 10px rgba(255, 255, 255, 0.144);
+    
+}
+
+.card-projeto{   
+    width: 180px;
+    background-color: var(--cor3);
+    border-radius: 3%;
+    box-shadow: 5px 5px 15px rgb(0, 0, 0);
+    margin: 30px auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+.imagem-card img{
+    width: 180px;
+    height: 100px;
+    border-top-right-radius: 3px;
+    border-top-left-radius:3px ;
+    margin-bottom: 10px;
+    
+}
+
+.card-projeto h3{
+    width: 80%;
+    color: var(--cor2);
+    text-align: center;
+    font-size: 1em;
+    padding: 2px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.233);
+}
+
+.card-projeto:hover{
+    box-shadow: 2px 2px 25px black ;
+    background-color: var(--cor4);
+    width: 250px;
+}
+
+.card-projeto p{
+    color: white;
+    font-size: 0.8em;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 20px;
+    padding: 8px;
+}
+
+.card-projeto .botao-card{
+    width: 50%;
+    padding: 2px;
+    margin: 3px;
+    background-color: var(--cor2);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.589);
+}
+.botao-card a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    width:95%;
+    float:left;
+}
+  
+.botao-card:hover, .botao-card a:hover{
+    background-color: var(--cor1);
+    color: var(--cor4);
+    border:none !important;
+    border-radius: 5px;
+    padding: 2px;
+    cursor:hand;
 }
