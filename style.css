@@ -150,3 +150,17 @@ header{
     padding: 2px;
     cursor:hand;
 }
+
+.roda-pe{
+    background-color: var(--cor0);
+    height: 5vh;
+    width: 100%;
+    
+}
+
+.roda-pe p{
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding: 2px;
+}
