@@ -20,6 +20,7 @@ html{
     background-color: var(--cor4);
     font-size: 1em;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
 
 /*cabeçalho*/
@@ -81,7 +82,7 @@ header{
     
 }
 
-.card-projeto{   
+.card-projeto, .card-projeto-não-pronto{   
     width: 180px;
     background-color: var(--cor3);
     border-radius: 3%;
@@ -102,7 +103,7 @@ header{
     
 }
 
-.card-projeto h3{
+.card-projeto h3, .card-projeto-não-pronto h3{
     width: 80%;
     color: var(--cor2);
     text-align: center;
@@ -111,13 +112,13 @@ header{
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.233);
 }
 
-.card-projeto:hover{
+.card-projeto:hover, .card-projeto-não-pronto:hover{
     box-shadow: 2px 2px 25px black ;
     background-color: var(--cor4);
     width: 250px;
 }
 
-.card-projeto p{
+.card-projeto p, .card-projeto-não-pronto p{
     color: white;
     font-size: 0.8em;
     font-family: 'Times New Roman', Times, serif;
@@ -125,7 +126,7 @@ header{
     padding: 8px;
 }
 
-.card-projeto .botao-card{
+.card-projeto .botao-card,.card-projeto-não-pronto .botao-card{
     width: 50%;
     padding: 2px;
     margin: 3px;
@@ -134,7 +135,7 @@ header{
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.589);
 }
-.botao-card a{
+.botao-card a, .card-projeto-não-pronto a{
     color: white;
     font-weight: bold;
     text-decoration: none;
@@ -149,6 +150,10 @@ header{
     border-radius: 5px;
     padding: 2px;
     cursor:hand;
+}
+
+.card-projeto-não-pronto:hover{
+    visibility: hidden;
 }
 
 .roda-pe{
