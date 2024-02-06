@@ -17,20 +17,32 @@
 }
 
 html{
+    background-image: url(/assets/not.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: black;
     font-size: 1em;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
 /*cabeçalho*/
 
 header{
-    background-color: var(--cor4);
-    width: 100%;
+    background-color:rgba(0, 0, 255, 0.3);
+    width: 70%;
+    max-width: 700px;
     height: 150px;
-    margin: auto;
-    border-bottom: 1px solid var(--cor0);
+    margin: 1%;
+    border-radius: 15px;
+    /*box-shadow: 1px 1px 10px white;*/
 }
 
 #nome-visitante{
@@ -64,26 +76,28 @@ header{
     font-size: 1.9em;
     font-weight: bold;
     text-align: center;
-    color:white;
+    color:var(--cor4);
     margin-top: 15px;
 }
 
 .cabecalho-dois p{
-    color: white;
-    font-size: 0.9em;
+    color: var(--cor4);
+    font-size: 1.1em;
+    font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     margin-top: 10px;
     max-width: 800px;
 }
 /* cards dos projetos*/
 .secao-cards{
-    background-color: var(--cor3);
-    width: 90%;
-    height: 70%;
-    margin: auto;  
+    background-color: #292c338d;
+    border-radius: 5px;
+    width: 70%;
+    max-width: 700px;
+    height: 90%;
     display: flex;
     flex-wrap: wrap;
-    box-shadow:  1px 1px 5px 2px rgba(245, 244, 244, 0.153);
+    box-shadow:  1px 1px 10px  rgb(11, 11, 11);
     
 }
 
@@ -170,9 +184,11 @@ width: 180px;
 }
 
 .roda-pe{
-    background-color: var(--cor0);
+    margin-top: 1%;
+    background-color: var(--cor3);
     height: 5vh;
-    width: 100%;
+    width: 100vw;
+    padding-bottom: 0;
     
 }
 
