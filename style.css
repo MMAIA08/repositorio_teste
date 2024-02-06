@@ -51,9 +51,7 @@ header{
 }
 
 .cabecalho-dois{
-    margin-top: 60px;
     padding: 10px;
-    border-top: 1px solid white;
     margin-bottom: 25px;
     display: flex;  
     flex-direction: column;
@@ -66,15 +64,15 @@ header{
     font-size: 1.9em;
     font-weight: bold;
     text-align: center;
-    color: var(--cor2);
-    margin-top: 25px;
+    color:white;
+    margin-top: 15px;
 }
 
 .cabecalho-dois p{
     color: white;
-    font-size: 1em;
+    font-size: 0.9em;
     font-family: 'Times New Roman', Times, serif;
-    margin-top: 20px;
+    margin-top: 10px;
     max-width: 800px;
 }
 /* cards dos projetos*/
@@ -112,17 +110,17 @@ header{
 
 .card-projeto h3, .card-projeto-não-pronto h3{
     width: 80%;
-    color: var(--cor2);
+    color: white;
     text-align: center;
     font-size: 1em;
     padding: 2px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.233);
+    border-bottom: 1px solid #004DDB;
 }
 
 .card-projeto:hover, .card-projeto-não-pronto:hover{
-    box-shadow: 2px 2px 25px black ;
+    box-shadow: 2px 2px 25px 10px black ;
     background-color: var(--cor4);
-    width: 250px;
+    width: 200px;
 }
 
 .card-projeto p, .card-projeto-não-pronto p{
@@ -146,15 +144,17 @@ header{
     color: white;
     font-weight: bold;
     text-decoration: none;
-    width:95%;
+    width:100%;
     float:left;
     cursor:none;
 }
 
 .botao-card:hover,.botao-card a:hover{
     background-color: var(--cor0);
-    color: var(--cor3);
+    color: black;
     cursor: pointer;
+    font-weight: bolder;
+    box-shadow: 1px 1px 5px black;
 }
   
 .card-projeto-não-pronto .botao-card:hover, .card-projeto-não-pronto .botao-card a:hover{
@@ -170,8 +170,6 @@ width: 180px;
 }
 
 .roda-pe{
-    position: fixed;
-    bottom: 0;
     background-color: var(--cor0);
     height: 5vh;
     width: 100%;
