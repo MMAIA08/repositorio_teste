@@ -17,7 +17,7 @@
 }
 
 html{
-    background-image: url(/assets/not.jpeg);
+    background-image: url(../assets/not.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
@@ -82,11 +82,12 @@ header{
 
 .cabecalho-dois p{
     color: var(--cor4);
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     margin-top: 10px;
     max-width: 800px;
+    margin-bottom: 5px;
 }
 /* cards dos projetos*/
 .secao-cards{
@@ -142,8 +143,7 @@ header{
     font-size: 0.8em;
     font-family: 'Times New Roman', Times, serif;
     line-height: 20px;
-    padding: 8px;
-}
+    margin: 5px;}
 
 .card-projeto .botao-card,.card-projeto-não-pronto .botao-card{
     width: 50%;
