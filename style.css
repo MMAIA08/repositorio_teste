@@ -17,7 +17,7 @@
 }
 
 html{
-    background-image: url(../assets/not.jpeg);
+    background-image: url("../assets/not.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
