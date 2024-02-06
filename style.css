@@ -17,7 +17,7 @@
 }
 
 html{
-    background-color: var(--cor4);
+    background-color: black;
     font-size: 1em;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
@@ -55,6 +55,11 @@ header{
     padding: 10px;
     border-top: 1px solid white;
     margin-bottom: 25px;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
 }
 
 .cabecalho-dois h1{
@@ -70,15 +75,17 @@ header{
     font-size: 1em;
     font-family: 'Times New Roman', Times, serif;
     margin-top: 20px;
+    max-width: 800px;
 }
 /* cards dos projetos*/
 .secao-cards{
     background-color: var(--cor3);
     width: 90%;
-    height: 25em;
+    height: 70%;
     margin: auto;  
     display: flex;
-    box-shadow:  2px 2px 10px rgba(255, 255, 255, 0.144);
+    flex-wrap: wrap;
+    box-shadow:  1px 1px 5px 2px rgba(245, 244, 244, 0.153);
     
 }
 
@@ -141,22 +148,30 @@ header{
     text-decoration: none;
     width:95%;
     float:left;
-}
-  
-.botao-card:hover, .botao-card a:hover{
-    background-color: var(--cor1);
-    color: var(--cor4);
-    border:none !important;
-    border-radius: 5px;
-    padding: 2px;
-    cursor:hand;
+    cursor:none;
 }
 
-.card-projeto-não-pronto:hover{
-    visibility: hidden;
+.botao-card:hover,.botao-card a:hover{
+    background-color: var(--cor0);
+    color: var(--cor3);
+    cursor: pointer;
+}
+  
+.card-projeto-não-pronto .botao-card:hover, .card-projeto-não-pronto .botao-card a:hover{
+    background-color: red;
+    color: red;
+    cursor:none;
+    
+}
+
+.card-projeto-não-pronto:hover {
+opacity: 10%;
+width: 180px;
 }
 
 .roda-pe{
+    position: fixed;
+    bottom: 0;
     background-color: var(--cor0);
     height: 5vh;
     width: 100%;
