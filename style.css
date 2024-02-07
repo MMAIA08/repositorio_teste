@@ -20,7 +20,7 @@ html{
     background-image: url("../not.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: black;
+    background-color: white;
     font-size: 1em;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
@@ -98,6 +98,7 @@ header{
     height: 90%;
     display: flex;
     flex-wrap: wrap;
+
     box-shadow:  1px 1px 10px  rgb(11, 11, 11);
     
 }
@@ -172,9 +173,8 @@ header{
 }
   
 .card-projeto-não-pronto .botao-card:hover, .card-projeto-não-pronto .botao-card a:hover{
-    background-color: red;
-    color: red;
-    cursor:none;
+    opacity: 0;
+    cursor:default;
     
 }
 
